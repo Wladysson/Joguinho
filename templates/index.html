@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazino</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+    <div class="clearfix">
+        <a> 𝕮𝖆𝖘𝖙𝖊𝖑𝖔 𝕱𝖚𝖗𝖙𝖚𝖓𝖊 </a><br>
+    </div><br>
+
+    <header>
+        <div class="ganhos"></div>
+        <span>𝕭𝖊𝖙: <i id="bet">1</i></span>
+        <span id="el-win" style="display: none;">Win: +<i id="win">0</i></span>
+        <span id="el-money" class="col-red">𝕸𝖔𝖓𝖊𝖞 $: <i id="money">0</i></span>
+        
+
+        <button id="btn-putmoney">𝕻𝖚𝖙 𝕸𝖔𝖓𝖊𝖞 💵</button>
+    </header>
+    
+    <main>
+        <section class="s-game">
+            <div class="c-game">
+
+                {% include 'slot_desenho.html' %}
+
+                <div id="game-area">
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                </div>
+                <span class="line line-1 left">-1-</span>
+                <span class="line line-1 right">-1-</span>
+                <span class="line line-2 left">-2-</span>
+                <span class="line line-2 right">-2-</span>
+                <span class="line line-3 left">-3-</span>
+                <span class="line line-3 right">-3-</span>
+            </div>
+        </section>
+            <div class="t-btn bet-container">
+                <button id="btn-bet" class="btn-bet">𝕭𝕰𝕿</button>
+            </div>
+            <div class="t-btn spin-container">
+                <button id="btn-spin" class="btn-spin">𝕾𝕻𝕴𝕹</button>
+            </div>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #222;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <canvas id="coinCanvas"></canvas>
+    <script src="{{ url_for('static', path='game.js')}}"></script>
+    <script src="{{ url_for('static', path='coins.js')}}"></script>
+
+</body>
+</html>

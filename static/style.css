@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    background-image: url('/static/imagefounds/cass.jpg');
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80%;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    z-index: 2; 
+  }
+  #coinCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .clearfix {
+    text-align: center;
+    color: rgb(255, 183, 3);
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(247, 3, 3, 0.897);
+  }
+  
+  header, main {
+    float: left;
+    width: 100%;
+  }
+  header {
+    height: 60px;
+  }
+  header span {
+    line-height: 60px;
+    font-size: 20px;
+    color: rgb(255, 183, 3);
+    text-shadow: 2px 2px 4px rgba(247, 3, 3, 0.897);
+    margin-left: 30px;
+  }
+  #btn-putmoney {
+    float: right;
+    margin-right: 30px;
+    background-color: transparent;
+    border: 4px outset silver;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 60px;
+    width: 130px;
+    margin-top: -90px;
+    color: #d8ff00;
+  }
+  #btn-putmoney:active {
+    border: 4px inset silver;
+  }
+
+  main {
+    height: calc(100% - 60px);
+  }
+  
+  section {
+    float: left;
+    height: 100%;
+  }
+  .s-game {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-game {
+    position: relative;
+    top: 60%;
+    left: 60%;
+    margin-top: -50px;
+    transform: translate(-56%, -62%);
+    width: auto;
+    height: auto;
+    box-sizing: content-box;
+
+    border-right: 20px solid #000000;
+    border-bottom: 20px solid #000000;
+    border-left: 20px solid #000000;
+    border-top: 20px solid #000000;
+  }
+  .line {
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .line-1 {
+    color: blue;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .line-2 {
+    color: green;
+    top: 15%;
+  }
+  
+  .line-3 {
+    color: red;
+    bottom: 15%;
+  }
+  
+  .line.left {
+    left: -18px;
+  }
+  
+  .line.right {
+    right: -18px;
+  }
+  
+  /* Game Area and Columns */
+  #game-area {
+    width: 690px;
+    height: 480px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 85px -12px rgba(0, 0, 0, 0.55);
+  }
+  
+  .c-column {
+    position: relative;
+    float: left;
+    min-height: 100%;
+    width: 20%;
+    border-left: 1px solid #1c1c1c;
+  }
+  
+  .c-column:last-child {
+    border-right: 1px solid #1c1c1c;
+  }
+  
+  .column {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .column:nth-child(1) {
+    transition: 1s;
+  }
+  
+  .column:nth-child(2) {
+    transition: 2s;
+  }
+  
+  .column:nth-child(3) {
+    transition: 3s;
+  }
+  
+  .column:nth-child(4) {
+    transition: 4s;
+  }
+  
+  .column:nth-child(5) {
+    transition: 5s;
+  }
+  
+  .column div {
+    position: relative;
+    width: 100%;
+    height: 160px;
+  }
+  
+  .bg {
+    background-color: #a2f4a4;
+  }
+  
+  .column div i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 80px;
+  }
+  
+  /* Buttons */
+  .t-btn {
+    float: left;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+/*estilo*/
+.btn-bet {
+  font-size: 24px;
+    color: #fff700;
+    background-color: transparent;
+    border: 4px outset silver;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn-spin {
+  font-size: 24px;
+    color: #fff700;
+    background-color: transparent;
+    border: 4px outset silver;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bet-container {
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-top: 450px; /* Ajusta a distância do botão Bet */
+}
+
+.spin-container {
+  margin-top: 20px;/* Ajusta a posição do botão Spin */
+  margin-top: 420px; 
+}
+
+/*redimecionamento*/
+  #btn-bet {
+    width: 80px;
+    height: 80px;
+  }
+  
+  #btn-spin {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .c-btn button:active {
+    border: 4px inset silver;
+  }
+  
+  .col-red {
+    color: rgb(255, 183, 3);
+  }
+  
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  td {
+    border: 1px dotted #1c1c1c;
+    padding: 3px 5px;
+  }
+  
