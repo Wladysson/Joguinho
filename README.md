@@ -1,10 +1,36 @@
 # House Furtune <img align="center" alt="wlady-java" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/> <img align="center" alt="wlady-java" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"/> <img align="center" alt="wlady-java" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/> <img align="center" alt="wlady-java" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"/> <img align="center" alt="wlady-java" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" /> <img align="center" alt="wlady-java" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" /> <img align="center" alt="wlady-java" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" />
 
-⚠️ Nota: Este projeto foi desenvolvido exclusivamente para fins de estudo. Seu objetivo é explorar arquiteturas modernas de software, boas práticas de desenvolvimento, segurança e integração de múltiplas tecnologias em um sistema modular. Nenhuma funcionalidade aqui descrita está ligada a operações com dinheiro real ou apostas legais.
+⚠️ Aviso: Este projeto é apenas para fins de estudo e aprendizado. Nenhuma funcionalidade está vinculada a apostas reais ou transações financeiras com dinheiro real.
 
-### Project
+### Project 
+
+![Descrição da imagem](./fundo.png)
+
 
 A arquitetura visualizada ganha vida com a escolha de tecnologias robustas e adequadas para cada camada, promovendo uma integração harmônica entre performance, escalabilidade e segurança. No centro da operação, orquestrando a lógica intrincada do cassino, o Python e o JavaScript formam uma dupla de excelência — cada um assumindo papéis específicos para entregar uma experiência completa, responsiva e segura. Foi estrategicamente desenhada para promover segurança, desempenho e escalabilidade, utilizando uma abordagem moderna e modular. Nela Python, JavaScript, PHP e bancos de dados distribuídos trabalham em conjunto, integrados por uma API robusta. A arquitetura está sendo progressivamente transformada em microsserviços independentes, cada um com uma função clara e isolada, esta e apenas uma arquitetura.
+
+Vivemos em uma era onde a experiência do usuário e a confiança na plataforma são tão valiosas quanto a diversão em si. Pensando nisso, o Cassino Castelo Fortune foi idealizado como um ambiente digital que vai além do convencional — um verdadeiro reino de possibilidades, onde cada detalhe foi cuidadosamente projetado para proporcionar não apenas entretenimento, mas também transparência, justiça e segurança.
+Inspirado no games mas atuais, nossa proposta é construir uma plataforma digital com bases sólidas: infraestrutura escalável, tecnologia de ponta, integração segura de dados financeiros e uma experiência imersiva para jogadores de todo o mundo.
+Este material visa descrever com clareza a visão por trás do projeto, a estrutura técnica que o sustenta e os diferenciais que fazem do Cassino Castelo Fortune uma aplicação de destaque em inovação no setor de jogos online.
+Entre os pilares fundamentais que sustentam o Cassino Castelo Fortune destacam-se: infraestrutura escalável e resiliente capaz de suportar alto tráfego com desempenho e estabilidade garantindo disponibilidade contínua da plataforma, arquitetura baseada em microsserviços que permite maior modularidade manutenção simplificada e integração dinâmica entre os diversos sistemas e componentes, integração segura com carteiras digitais e sistemas financeiros internacionais aceitando moedas como Real Euro Dólar e criptomoedas como Bitcoin e Solana, sistema antifraude inteligente com monitoramento em tempo real de padrões suspeitos mitigação de ataques como DDoS e SQL Injection e alertas automatizados via email e Telegram para incidentes críticos, gamificação refinada com gráficos avançados trilha sonora temática e recursos visuais inspirados na estética medieval promovendo uma imersão sensorial completa,banco de dados altamente estruturado com registros criptografados logs auditáveis backups frequentes e segregação lógica de informações críticas. 
+
+O Cassino Castelo Fortune nasce com a proposta de ir além do jogo, oferecendo uma experiência digital moderna, transparente e segura. Inspirado e impulsionado pelos avanços da tecnologia, buscamos construir um ambiente onde cada detalhe foi pensado para surpreender.
+Convidamos você a conhecer os pilares que sustentam este projeto e os diferenciais que o tornam interessante e envolvente.
+
+<p align="center">
+  <img src="./assents/python.gif" alt="Demonstração do jogo" width="100">
+</p>
+
+![Descrição da imagem](./arq.png)
+
+<p align="center">
+  <img src="./assents/cassino.gif" width="100" alt="Jogo 1" style="margin-right: 10px;">
+  <img src="./assents/níqueis.gif" width="100" alt="Jogo 2" style="margin-right: 10px;">
+  <img src="./assents/espadas.gif" width="100" alt="Jogo 3">
+</p>
+
+A imagem a seguir revela os bastidores, construído sobre a poderosa base de microsserviços. Prepare-se para uma jornada visual através de seus componentes essenciais, desde o portão de entrada que recebe seus lances até os motores que impulsionam cada giro, cada carta e cada resultado. Essa intrincada rede de serviços independentes colabora para criar a magia do entretenimento digital, garantindo uma experiência de usuário impecável segura e resiliente. A arquitetura visualizada ganha vida com a escolha de tecnologias robustas e adequadas para cada camada. No coração do servidor, controlando a lógica intrincada do cassino, o Python emerge como uma linguagem poderosa e versátil. Sua sintaxe clara, vasta biblioteca e forte comunidade a tornam ideal para construir sistemas complexos e escaláveis.
+
 
 🧠 Backend Inteligente com Python
 No coração do servidor, o Python se destaca como uma linguagem poderosa e versátil. Sua sintaxe clara, bibliotecas maduras e comunidade ativa o tornam ideal para construir microsserviços escaláveis e de alta confiabilidade. Dentro desse ecossistema Python, duas ferramentas ganham protagonismo:
@@ -72,6 +98,10 @@ Monitoramento de queries lentas.
 Backup automatizado e replicação para garantir disponibilidade.
 
 Integração com sistema de alertas para falhas ou tentativas de acesso indevido.
+
+
+
+
 
 
 
